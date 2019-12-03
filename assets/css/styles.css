@@ -1,0 +1,149 @@
+.indexbody {
+  background-color: rgb(231,230,230);
+}
+
+.Resume {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.Resumetext {
+  font-size: 18px;
+  font-weight: 400;
+  align-content: center;
+}
+
+.resumetext {
+  font-size: 27px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+
+#Resumeimage {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.resumediv {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  color: white;
+}
+
+.text-light {
+  color: white!important;
+}
+
+#resumelink {
+}
+
+#resumelink {
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: 'Alatsi', sans-serif;
+}
+
+.fa.fa-location-arrow {
+  color: #0056b3;
+  padding-left: 10px;
+}
+
+#resumelink {
+  font-family: 'Alatsi', sans-serif !important;
+  font-size: 18px !important;
+}
+
+#paradiv {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#pararesume {
+  font-family: 'Alatsi', sans-serif;
+  font-size: 20px;
+}
+
+.gallerybody {
+  background-color: white;
+}
+
+.gallerydiv {
+  text-align: center;
+}
+
+.galleryheading {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  padding-top: 40px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.sayhipara {
+  font-family: 'Alatsi', sans-serif;
+  font-size: 20px;
+}
+
+.contacthead {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  padding-top: 10px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+@media (min-width: 576px) {
+  .me {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.divim {
+  text-align: center;
+}
+
+.listme {
+  font-family: 'Alatsi', sans-serif;
+  font-size: 20px;
+}
+
+.socialdiv {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.fa.fa-facebook-official {
+  font-size: 42px;
+}
+
+.fa.fa-instagram {
+  padding-left: 10px;
+  font-size: 42px;
+}
+
+.fa.fa-github-square {
+  padding-left: 10px;
+  font-size: 42px;
+}
+
+.fa.fa-linkedin-square {
+  padding-left: 10px;
+  font-size: 42px;
+}
+
