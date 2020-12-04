@@ -34,6 +34,15 @@ body {
   left: 0;
   top: 0;
 }
+/* particles css */
+#particles-js {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #161618;
+  z-index: -100;
+}
 
 body {
   overflow-x: hidden;
