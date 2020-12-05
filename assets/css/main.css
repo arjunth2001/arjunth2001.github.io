@@ -43,6 +43,14 @@ body {
   background-color: #161618;
   z-index: -100;
 }
+.img-about-1 {
+  background-image: url("/assets/images/me.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 122.3%;
+}
 
 body {
   overflow-x: hidden;
