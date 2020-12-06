@@ -1,70 +1,83 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/share.jpeg" />
+    <link rel="shortcut icon" href="/assets/images/share.jpeg" />
     <!-- Social share meta tags -->
-    <meta property="og:title" content="Blog - T.H.Arjun" />
-    <meta
-      property="og:description"
-      content="T.H.Arjun is a UG2 Research Student @ IIIT-H who loves to code, develop, paint and design."
-    />
+    <meta property="og:title" content="{{page.title}} - T.H.Arjun" />
+    <meta property="og:description" content="{{page.description}}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/share.jpeg" />
+    <meta property="og:image" content="/assets/images/share.jpeg" />
     <meta property="og:site_name" content="T.H.Arjun" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="T.H.Arjun" />
-    <meta
-      name="twitter:description"
-      content="T.H.Arjun is a UG2 Research Student @ IIIT-H who loves to code, develop, paint and design."
-    />
-    <meta name="twitter:image:src" content="assets/images/share.jpeg" />
+    <meta name="twitter:title" content="{{page.title}}-T.H.Arjun" />
+    <meta name="twitter:description" content="{{page.description}}" />
+    <meta name="twitter:image:src" content="/assets/images/share.jpeg" />
     <!-- End social share meta tags -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Blog - T.H.Arjun</title>
-    <meta
-      name="description"
-      content="T.H.Arjun is a UG2 Research Student @ IIIT_H who loves to code, develop, paint and design."
-    />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/grid.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+    <link rel="stylesheet" href="/assets/css/post.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
+config=TeX-AMS-MML_HTMLorMML"
+    ></script>
+
+    <title>{{page.title}} - T.H.Arjun</title>
+    <meta name="description" content="{{page.description}}" />
   </head>
   <body class="dark">
-    <section class="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-3 col-4-sm">
-            <li>
-              <a href="index.html" title="Home" class="type-white">T.H.Arjun</a>
-            </li>
+    <section class="basic">
+      <section class="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-4-sm">
+              <li>
+                <a href="/index.html" title="Home" class="type-white"
+                  >T.H.Arjun</a
+                >
+              </li>
+            </div>
+            <div class="col-9 col-8-sm align-r">
+              <li>
+                <a href="/work.html" title="Work" class="type-white">Work</a>
+              </li>
+              <li>
+                <a href="/art.html" title="Art" class="type-white">Art</a>
+              </li>
+              <li>
+                <a href="/blog" title="Blog" class="type-white">Blog</a>
+              </li>
+            </div>
           </div>
-          <div class="col-9 col-8-sm align-r">
-            <li>
-              <a href="/work.html" title="Work" class="type-white">Work</a>
-            </li>
-            <li>
-              <a href="/art.html" title="Art" class="type-white">Art</a>
-            </li>
-            <li>
-              <a href="/blog.html" title="Blog" class="type-white">Blog</a>
-            </li>
+        </div>
+      </section>
+    </section>
+    <div class="insider">
+      <div class="meraimg">
+        <img src="{{page.image}}" class="post--bg-image" />
+      </div>
+
+      <div id="post" class="body dark post">
+        <div class="body__section body__section--post">
+          <h1>{{page.title}}</h1>
+          <div class="body__section--post-meta">
+            <span>{{ page.date | date_to_string }}</span>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="x-large type-white">The Blog is under Construction..</p>
-            <p class="x-large type-white">Bob the Builder is on leave.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
+    </div>
+    <section><div class="mdmera">{{content}}</div></section>
+
+    <section class="basic">
       <div class="container">
         <div class="row">
           <div class="col-2">
@@ -151,7 +164,7 @@
         </div>
       </div>
     </section>
-    <section class="footer">
+    <section class="basic footer">
       <div class="container">
         <div class="row">
           <div class="col-3">
@@ -165,9 +178,7 @@
               <a href="/art.html" title="Art" class="heavy type-white">Art</a>
             </p>
             <p>
-              <a href="/blog.html" title="Blog" class="heavy type-white"
-                >Blog</a
-              >
+              <a href="/blog" title="Blog" class="heavy type-white">Blog</a>
             </p>
           </div>
           <div class="col-3">
