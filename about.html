@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/gallery.css" />
     <script src="assets/js/polyfills.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>About - T.H.Arjun</title>
     <meta
       name="description"
@@ -58,7 +60,7 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
         <div class="row">
           <div class="col-8">
             <h1 class="type-white">About me</h1>
@@ -89,11 +91,15 @@
         <div class="row">
           <div class="col-2 col-1-sm"></div>
           <div class="col-4 col-10-sm">
-            <div class="img-about-1"></div>
+            <div
+              class="img-about-1"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            ></div>
             <p class="label type-white">This is me btw</p>
           </div>
           <div class="col-1 hidden-sm"></div>
-          <div class="col-5">
+          <div class="col-5" data-aos="fade-left" data-aos-duration="1000">
             <h2 class="type-white">My Current Interests</h2>
             <li class="type-white">Coding</li>
             <li class="type-white">Development</li>
@@ -112,7 +118,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-8" data-aos="flip-up" data-aos-duration="1000">
             <h1 class="type-white">Resume</h1>
             <p class="type-white">
               Feel free to check out my
@@ -269,5 +275,8 @@
     <script src="assets/js/particles.js" defer></script>
     <script src="assets/js/particlesrunner.js" defer></script>
     <script src="./assets/js/gallery.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

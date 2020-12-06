@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/projects.css" />
     <link rel="stylesheet" href="./assets/css/gallery.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Art - T.H.Arjun</title>
     <meta
@@ -58,7 +60,7 @@
     </section>
 
     <section>
-      <div class="container">
+      <div class="container" data-aos="flip-right" data-aos-duration="1000">
         <div class="row">
           <div class="col-8">
             <h1 class="type-white">I like to draw, sketch and paint...</h1>
@@ -78,7 +80,7 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container" data-aos="flip-left" data-aos-duration="1000">
         <div class="row">
           <div class="col-4 hidden-sm"></div>
           <div class="col-8">
@@ -274,7 +276,7 @@
         </div>
       </div>
     </section>
-    <div class="insider">
+    <div class="insider" data-aos="slide-up" data-aos-duration="1000">
       <div class="body body--sub">
         <div
           class="body__section body__section--case-study-items body__section--fade-up"
@@ -578,5 +580,8 @@
       </div>
     </section>
     <script src="./assets/js/gallery.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

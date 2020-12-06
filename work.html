@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/projects.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Work - T.H.Arjun</title>
     <meta
@@ -58,7 +60,12 @@
     </section>
     <section>
       <div class="container">
-        <div class="row">
+        <div
+          class="row"
+          data-aos="fade-down"
+          data-aos-delay="0"
+          data-aos-duration="1500"
+        >
           <div class="col-8">
             <h1 class="type-white">Featured Projects and Work</h1>
             <p class="type-white">
@@ -311,7 +318,12 @@
       </div>
     </div>
     <section>
-      <div class="container">
+      <div
+        class="container"
+        data-aos="slide-right"
+        data-aos-duration="1500"
+        data-aos-delay="0"
+      >
         <div class="row">
           <div class="col-1 hidden-sm"></div>
           <div class="col-5">
@@ -340,6 +352,14 @@
                 title="KDE Wiki"
                 class="type-white"
                 >Porting KDE Wiki Website to Jekyll Theme</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/arjunth2001/arjunth2001.github.io"
+                title="Portfolio Website"
+                class="type-white"
+                >This Personal Website</a
               >
             </li>
             <li>
@@ -493,5 +513,8 @@
         </div>
       </div>
     </section>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
