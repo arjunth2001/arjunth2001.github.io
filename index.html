@@ -1,3 +1,6 @@
+--- 
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,6 +28,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
     <script src="assets/js/polyfills.js" defer></script>
     <title>Home - T.H.Arjun</title>
     <meta
@@ -68,6 +72,75 @@
               Other times, you can find me scrolling through memes.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="type-white">Featured Blog Posts</h1>
+          </div>
+          <div class="col-4 hidden-sm"></div>
+        </div>
+      </div>
+    </section>
+    <div class="insider">
+      <div class="body body--sub">
+        <div
+          class="body__section body__section--case-study-items body__section--fade-up"
+        >
+          {% for post in site.posts %} {% if post.featured == true %}
+          <a
+            href="{{post.url}}"
+            rel="noopener"
+            class="case-study-item case-study-item--hover case-study-item--"
+          >
+            <div class="case-study-item__img">
+              <div class="case-study-item__img__image">
+                {% if post.image %}
+                <img src="{{post.image}}" alt="" aria-label="Read More" />
+                {% else %}
+                <video
+                  muted="muted"
+                  autoplay="autoplay"
+                  loop="loop"
+                  playsinline=""
+                >
+                  <source src="{{post.video}}" type="video/mp4" />
+                </video>
+                {% endif %}
+              </div>
+            </div>
+            <div class="case-study-item__data">
+              <div class="case-study-item__data--content">
+                <div class="case-study-item__meta type-white">
+                  <span class="type-white"
+                    >{{ post.date | date_to_string }}</span
+                  >
+                </div>
+                <div class="case-study-item__copy">
+                  <h2>{{post.title}}</h2>
+                  <p>{{post.description}}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          {% endif %} {% endfor %}
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-1 hidden-sm"></div>
+          <div class="col-5">
+            <li>
+              <a href="/blog" title="Blog" class="type-white">See all Posts</a>
+            </li>
+          </div>
+          <div class="col-2 col-1-sm"></div>
+          <div class="col-4 col-10-sm"></div>
         </div>
       </div>
     </section>
